@@ -239,7 +239,8 @@
   .logo-card--map{padding:6px}
   .logo-card--map img{max-height:120px}
   @media (max-width:520px){.logos-grid{grid-template-columns:repeat(2,1fr)}}
-  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .quotes{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+  .quotes .quote{flex:0 1 calc(33.333% - 11px)}
   .quote{background:#fff;border-radius:14px;padding:22px;box-shadow:0 8px 20px rgba(0,0,0,.06);display:flex;flex-direction:column}
   .quote .stars{color:var(--gold-deep);letter-spacing:2px;font-size:.95rem;margin-bottom:12px}
   .quote p{margin:0 0 16px;font-size:.98rem;color:#2a2620}
@@ -325,7 +326,7 @@
     .step .tag{min-width:96px}
     .step-txt{display:flex;flex-direction:column;gap:4px}
     .social-top{grid-template-columns:1fr}
-    .quotes{grid-template-columns:1fr}
+    .quotes .quote{flex-basis:100%}
     .why-grid{grid-template-columns:1fr 1fr}
     .foot-grid{grid-template-columns:1fr}
   }
@@ -576,6 +577,7 @@
       <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Excelente qualidade e acabamento impecável. Camisas confortáveis, bem confeccionadas, com um design incrível."</p><div class="who">Alex Borges</div></div>
       <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Ótimo atendimento e uniformes de qualidade. Parabéns pelo trabalho."</p><div class="who">Michelle Castro</div></div>
       <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Ótima qualidade e os preços são acessíveis. Atendimento excelente, muito simpático e prestativo."</p><div class="who">Lincoln Máximo</div></div>
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Produto de excelente qualidade e ótimo atendimento"</p><div class="who">Marcos Mendes</div></div>
     </div>
   </div>
 </section>
