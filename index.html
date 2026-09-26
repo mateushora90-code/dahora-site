@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9YCVSG86G"></script>
 <script>
@@ -8,8 +9,18 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-V9YCVSG86G');
+  /* conta cada clique nos botoes de WhatsApp como 'clique_whatsapp' */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    if(!a) return;
+    var local = 'outro';
+    if(a.classList.contains('wa-float')) local = 'botao_flutuante';
+    else if(a.closest('header')) local = 'topo';
+    else if(a.closest('footer')) local = 'rodape';
+    else { var sec = a.closest('section[id]'); if(sec) local = sec.id; }
+    gtag('event', 'clique_whatsapp', { local_botao: local, transport_type: 'beacon' });
+  });
 </script>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Da Hora Camisetas & Uniformes — Uniformes personalizados no Vale do Paraíba</title>
 <meta name="description" content="Uniformes personalizados desde 1990 em São José dos Campos. Silk, bordado, DTF e sublimação. Fábrica própria e orçamento sem compromisso.">
