@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9YCVSG86G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V9YCVSG86G');
+  /* conta cada clique nos botoes de WhatsApp como 'clique_whatsapp' */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    if(!a) return;
+    var local = 'outro';
+    if(a.classList.contains('wa-float')) local = 'botao_flutuante';
+    else if(a.closest('header')) local = 'topo';
+    else if(a.closest('footer')) local = 'rodape';
+    else { var sec = a.closest('section[id]'); if(sec) local = sec.id; }
+    gtag('event', 'clique_whatsapp', { local_botao: local, transport_type: 'beacon' });
+  });
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uniformes para Empresas em São José dos Campos | Da Hora</title>
+<meta name="description" content="Uniformes para empresas e indústria em São José dos Campos: camiseta, polo, jaleco, calça de brim e refletivo com a sua logo. Fábrica própria desde 1990, a partir de 10 peças.">
+<link rel="canonical" href="https://www.dahorauniformes.com.br/empresas/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Da Hora Camisetas &amp; Uniformes">
+<meta property="og:url" content="https://www.dahorauniformes.com.br/empresas/">
+<meta property="og:title" content="Uniformes para empresas em São José dos Campos | Da Hora">
+<meta property="og:description" content="Uniformes para empresas e indústria em São José dos Campos: camiseta, polo, jaleco, calça de brim e refletivo com a sua logo. Fábrica própria desde 1990, a partir de 10 peças.">
+<meta property="og:image" content="https://www.dahorauniformes.com.br/images/og-da-hora.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Service",
+   "name": "Uniformes para empresas e indústria",
+   "serviceType": "Confecção de uniformes personalizados para empresas",
+   "url": "https://www.dahorauniformes.com.br/empresas/",
+   "description": "Uniformes para empresas e indústria em São José dos Campos: camiseta, polo, jaleco, calça de brim e refletivo com a sua logo. Fábrica própria desde 1990, a partir de 10 peças.",
+   "provider": {
+    "@id": "https://www.dahorauniformes.com.br/#empresa"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "São José dos Campos"
+    },
+    {
+     "@type": "City",
+     "name": "Jacareí"
+    },
+    {
+     "@type": "City",
+     "name": "Caçapava"
+    },
+    {
+     "@type": "City",
+     "name": "Taubaté"
+    },
+    {
+     "@type": "City",
+     "name": "Pindamonhangaba"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://www.dahorauniformes.com.br/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Uniformes para empresas",
+     "item": "https://www.dahorauniformes.com.br/empresas/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Public+Sans:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#000000;
+    --ink-2:#0c0c0c;
+    --tag:#111111;
+    --gold:#FFCC00;
+    --gold-deep:#e6b800;
+    --petrol:#002833;
+    --petrol-2:#0d4150;
+    --cream:#efeae0;
+    --cream-2:#e5dfd2;
+    --text:#141210;
+    --muted:#5b564d;
+    --paper:#f4f1ea;
+    --paper-muted:#a8a39a;
+    --wa:#25D366;
+    --maxw:1160px;
+    --stitch: repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 18px);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--text);
+    font-family:"Public Sans",system-ui,sans-serif;
+    font-size:clamp(1rem,1rem + 0.2vw,1.06rem);
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.hero-title{font-family:"Archivo",sans-serif;text-transform:uppercase;line-height:1.02;letter-spacing:-0.012em;margin:0}
+  a{color:inherit}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,44px)}
+
+  /* ---- shared bits ---- */
+  .eyebrow{
+    font-family:"Spline Sans Mono",monospace;
+    font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--gold-deep);font-weight:500;margin:0 0 18px;
+    display:inline-block;
+  }
+  .on-dark .eyebrow{color:var(--gold)}
+  h1.eyebrow{line-height:1.5}
+  .stitch{
+    height:2px;width:100%;
+    background:var(--stitch);background-size:18px 2px;
+    opacity:.9;
+  }
+  .btn-wa{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:#111;text-decoration:none;
+    font-family:"Archivo",sans-serif;font-weight:800;text-transform:uppercase;
+    letter-spacing:.02em;font-size:.98rem;
+    padding:15px 26px;border-radius:12px;border:2px solid #111;
+    box-shadow:4px 4px 0 #111;transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+  .on-dark .btn-wa{border-color:var(--gold);box-shadow:4px 4px 0 rgba(255,204,0,.25)}
+  .btn-wa:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #111;background:var(--gold-deep)}
+  .on-dark .btn-wa:hover{box-shadow:6px 6px 0 rgba(255,204,0,.35)}
+  .btn-wa svg{width:20px;height:20px;flex:none}
+  .btn-wa.big{font-size:1.12rem;padding:19px 34px}
+
+  /* focus */
+  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+  /* ---- hang tag (signature) ---- */
+  .tag{
+    position:relative;
+    background:var(--tag);color:var(--paper);
+    border-radius:16px;
+    padding:20px 18px 16px;
+    text-align:center;min-width:104px;
+    box-shadow:0 10px 24px rgba(0,0,0,.18);
+  }
+  .tag::before{ /* punch hole */
+    content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);
+    width:11px;height:11px;border-radius:50%;
+    background:transparent;border:2px solid var(--gold);
+  }
+  .tag .num{
+    font-family:"Archivo",sans-serif;font-weight:900;
+    color:var(--gold);font-size:2.5rem;line-height:1;margin-top:8px;
+  }
+  .tag .lbl{
+    font-family:"Spline Sans Mono",monospace;font-size:.66rem;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--paper-muted);
+    margin-top:7px;line-height:1.3;
+  }
+
+  /* ---- named image placeholder ---- */
+  .ph{
+    position:relative;width:100%;height:100%;min-height:200px;
+    border:2px dashed rgba(0,0,0,.28);border-radius:14px;
+    background:
+      repeating-linear-gradient(45deg, rgba(0,0,0,.03) 0 12px, transparent 12px 24px),
+      var(--cream-2);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:6px;text-align:center;padding:18px;color:var(--muted);
+  }
+  .on-dark .ph{border-color:rgba(255,255,255,.22);background:
+      repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 12px, transparent 12px 24px),
+      #151515;color:var(--paper-muted)}
+  .ph .ph-name{font-family:"Spline Sans Mono",monospace;font-weight:600;letter-spacing:.08em;color:var(--gold-deep);font-size:.82rem}
+  .on-dark .ph .ph-name{color:var(--gold)}
+  .ph .ph-tip{font-size:.78rem;max-width:24ch}
+
+  /* ---- sections ---- */
+  .section{padding:clamp(64px,9vw,110px) 0}
+  .section.dark{background:var(--ink);color:var(--paper)}
+  .section.dark h2,.section.dark h3{color:var(--paper)}
+  .section-head{max-width:760px;margin-bottom:clamp(34px,5vw,52px)}
+  .section-head h2{font-size:clamp(1.9rem,5.4vw,3.3rem);font-weight:900}
+  .section-head .stitch{margin-top:20px;max-width:220px}
+
+  /* reveal */
+  .reveal{transition:opacity .6s ease, transform .6s ease}
+  html.anim .reveal{opacity:0;transform:translateY(18px)}
+  html.anim .reveal.in{opacity:1;transform:none}
+
+  /* ================= HERO ================= */
+  .hero{background:var(--ink);color:var(--paper)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:88vh}
+  .hero-left{padding:clamp(38px,6vw,72px) clamp(24px,5vw,64px);display:flex;flex-direction:column;justify-content:center}
+  .hero-logo{width:clamp(150px,20vw,196px);border-radius:14px;margin-bottom:34px}
+  .hero .hero-title{font-size:clamp(2.2rem,5.6vw,4rem);font-weight:900;color:var(--paper)}
+  .hero .hero-title em{font-style:normal;color:var(--gold)}
+  .hero-sub{font-family:"Spline Sans Mono",monospace;letter-spacing:.06em;font-size:.9rem;text-transform:uppercase;color:var(--paper-muted);margin:22px 0 0}
+  .hero .stitch{max-width:200px;margin:26px 0 32px}
+  .hero-tags{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+  .hero-stats{list-style:none;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 26px;margin:0 0 36px;padding:0;
+    font-family:"Spline Sans Mono",monospace;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--paper-muted)}
+  .hero-stats li{display:flex;align-items:baseline;gap:8px}
+  .hero-stats b{font-family:"Archivo",sans-serif;font-weight:900;color:var(--gold);font-size:1.5rem;line-height:1}
+  .hero-cta-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .hero-cta-note{font-family:"Spline Sans Mono",monospace;font-size:.74rem;letter-spacing:.08em;color:var(--paper-muted);text-transform:uppercase}
+  .hero-right{position:relative;background:#000;min-height:340px;overflow:hidden}
+  .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom}
+  .hero-right .ph{position:absolute;inset:0;border:none;border-radius:0;
+    background:repeating-linear-gradient(45deg, rgba(0,0,0,.14) 0 14px, transparent 14px 28px), var(--petrol);color:#cfe0e4}
+  .hero-right .ph-name{color:var(--gold)}
+
+  /* ============== SEGMENTOS (carousel) ============== */
+  .carousel-hint{font-family:"Spline Sans Mono",monospace;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+  .carousel{position:relative;overflow:hidden;border-radius:18px}
+  .track{display:flex;transition:transform .45s cubic-bezier(.22,.61,.36,1)}
+  .slide{min-width:100%;padding:4px}
+  .seg-card{
+    background:var(--ink);color:var(--paper);border-radius:18px;overflow:hidden;
+    display:grid;grid-template-columns:1fr 1fr;min-height:340px;border:2px solid #111;
+  }
+  .seg-card .ph{min-height:340px;border:none;border-radius:0}
+  .seg-img{width:100%;height:100%;min-height:340px;object-fit:contain;object-position:center bottom;display:block;background:var(--ink)}
+  .seg-body{padding:clamp(26px,4vw,44px);display:flex;flex-direction:column;justify-content:center}
+  .seg-body .kicker{font-family:"Spline Sans Mono",monospace;color:var(--gold);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+  .seg-body h3{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;color:var(--paper)}
+  .seg-body p{color:var(--paper-muted);margin:16px 0 0;font-size:1.05rem}
+  /* reinforcement card */
+  .seg-card.solid{grid-template-columns:1fr;background:var(--gold);color:#111;border-color:#111;align-items:center;text-align:center}
+  .seg-card.solid .seg-body{align-items:center}
+  .seg-card.solid h3{color:#111}
+  .seg-card.solid p{color:#1a1a1a}
+  .seg-card.solid .btn-wa{margin-top:26px;background:#111;color:var(--gold);border-color:#111;box-shadow:4px 4px 0 rgba(0,0,0,.3)}
+  .seg-card.solid .btn-wa:hover{background:#000}
+
+  .carousel-nav{display:flex;align-items:center;justify-content:space-between;margin-top:22px}
+  .dots{display:flex;gap:9px}
+  .dot{width:11px;height:11px;border-radius:50%;border:2px solid #111;background:transparent;cursor:pointer;padding:0}
+  .dot[aria-selected="true"]{background:#111}
+  .arrows{display:flex;gap:10px}
+  .arrow{width:46px;height:46px;border-radius:12px;border:2px solid #111;background:var(--cream);cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:background .12s}
+  .arrow:hover{background:var(--gold)}
+  .arrow:disabled{opacity:.32;cursor:default}
+
+  /* ============== POR QUE ============== */
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .section-head.center .stitch{margin-left:auto;margin-right:auto}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .why-card{background:#0e0e0e;border:1px solid #232323;border-radius:16px;padding:30px 24px;text-align:center}
+  .why-card .wc-ic{width:40px;height:40px;margin:0 auto 18px;border-radius:11px;background:var(--gold);color:#111;
+    display:flex;align-items:center;justify-content:center;font-family:"Archivo";font-weight:900;font-size:1.15rem}
+  .why-card h3{font-size:1.05rem;font-weight:800;color:var(--paper);text-transform:none;letter-spacing:normal;margin-bottom:10px}
+  .why-card p{margin:0;color:var(--paper-muted);font-size:.95rem;line-height:1.55}
+  .why-quote{
+    margin:34px auto 0;max-width:820px;text-align:center;
+    padding:30px clamp(24px,4vw,44px);
+    border:2px dashed var(--gold);border-radius:16px;background:rgba(255,204,0,.05);
+  }
+  .why-quote p{font-family:"Archivo",sans-serif;text-transform:uppercase;font-weight:800;
+    font-size:clamp(1.3rem,3.2vw,2rem);line-height:1.15;color:var(--paper);letter-spacing:-.01em;margin:0}
+  .why-quote p em{font-style:normal;color:var(--gold)}
+  .why-quote .qk{font-family:"Spline Sans Mono";color:var(--gold);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:14px}
+
+  /* ============== PRODUTOS ============== */
+  .tech-line{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 34px}
+  .tech-chip{font-family:"Spline Sans Mono",monospace;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;background:#111;color:var(--gold);padding:9px 16px;border-radius:999px}
+  .tech-block{margin-top:44px}
+  .tech-title{font-size:1.1rem;font-weight:800;text-transform:none;letter-spacing:normal;margin:0 0 18px}
+  .tech-title::after{content:"";display:block;height:2px;width:64px;margin-top:12px;background:var(--stitch);background-size:18px 2px}
+  .tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .tech-card{background:#fff;border-radius:14px;padding:12px 12px 16px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+  .tech-card .ph{height:auto;min-height:150px;flex:none}
+  .tech-img{width:100%;height:170px;object-fit:cover;border-radius:10px;display:block;margin-bottom:2px}
+  .tech-card .tech-name{font-family:"Archivo",sans-serif;font-weight:900;text-transform:uppercase;font-size:1.05rem;margin:14px 0 6px}
+  .tech-card .tech-note{margin:0;font-size:.9rem;color:var(--muted);line-height:1.45}
+
+  /* ============== COMO FUNCIONA ============== */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+  .step{display:flex;flex-direction:column;gap:16px}
+  .step .tag{min-width:0}
+  .step .tag::before{display:none}
+  .step .tag .num{margin-top:0}
+  .step h3{font-size:1.02rem;font-weight:700;color:var(--paper);text-transform:none;letter-spacing:normal}
+  .step p{margin:0;color:var(--paper-muted);font-size:.95rem}
+  .steps-note{margin-top:30px;font-family:"Spline Sans Mono";font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+
+  /* ============== PROVA SOCIAL ============== */
+  .social-top{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:stretch;margin-bottom:36px}
+  .seal{background:var(--ink);color:var(--paper);border-radius:18px;padding:30px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+  .seal .big{font-family:"Archivo";font-weight:900;color:var(--gold);font-size:3.6rem;line-height:1}
+  .seal .cap{font-family:"Spline Sans Mono";font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-muted);margin-top:10px}
+  .social-top .ph{min-height:200px}
+  .logos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px;align-content:center}
+  .logo-card{background:#fff;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;padding:14px 14px;min-height:148px;transition:transform .15s ease, box-shadow .15s ease}
+  .logo-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.10)}
+  .logo-card img{max-width:100%;max-height:108px;width:auto;height:auto;object-fit:contain;display:block}
+  .logo-card--dark{background:#141414}
+  .logo-card--gray{background:#808080}
+  .logo-card--black{background:#000}
+  .logo-card--map{padding:6px}
+  .logo-card--map img{max-height:120px}
+  @media (max-width:520px){.logos-grid{grid-template-columns:repeat(2,1fr)}}
+  .quotes{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+  .quotes .quote{flex:0 1 calc(33.333% - 11px)}
+  .quote{background:#fff;border-radius:14px;padding:22px;box-shadow:0 8px 20px rgba(0,0,0,.06);display:flex;flex-direction:column}
+  .quote .stars{color:var(--gold-deep);letter-spacing:2px;font-size:.95rem;margin-bottom:12px}
+  .quote p{margin:0 0 16px;font-size:.98rem;color:#2a2620}
+  .quote .who{margin-top:auto;font-family:"Archivo";font-weight:800;text-transform:uppercase;font-size:.86rem;letter-spacing:.02em}
+
+  /* ============== SOBRE + CTA ============== */
+  /* ============== HISTORIA ============== */
+  .story{max-width:760px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .story h2{font-size:clamp(1.8rem,4.8vw,3rem);font-weight:900;color:var(--paper)}
+  .story .stitch{max-width:180px;margin:20px 0 26px}
+  .story p{color:var(--paper-muted);font-size:1.1rem;line-height:1.7;margin:0}
+  .story .story-note{
+    margin-top:30px;padding:24px 28px;
+    border:2px dashed var(--gold);border-radius:16px;background:rgba(255,204,0,.05);
+    color:var(--paper);font-family:"Archivo",sans-serif;font-weight:800;text-transform:uppercase;
+    font-size:clamp(1.05rem,2.4vw,1.4rem);line-height:1.3;letter-spacing:-.01em;
+  }
+  /* ============== FAQ ============== */
+  .faq{max-width:860px;margin:0 auto;display:grid;gap:10px}
+  .faq-item{background:#fff;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.05);overflow:hidden}
+  .faq-item summary{
+    cursor:pointer;list-style:none;padding:20px 54px 20px 22px;position:relative;
+    font-family:"Archivo",sans-serif;font-weight:700;font-size:1.02rem;color:var(--text);
+  }
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{
+    content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);
+    font-family:"Archivo";font-weight:900;font-size:1.4rem;color:var(--gold-deep);line-height:1;
+  }
+  .faq-item[open] summary::after{content:"–"}
+  .faq-item[open] summary{color:#000}
+  .faq-item p{margin:0;padding:0 22px 22px;color:var(--muted);font-size:.98rem;line-height:1.6}
+
+  /* ============== CTA FINAL ============== */
+  .closing{max-width:720px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+  .closing h2{font-size:clamp(1.7rem,4.6vw,2.9rem);font-weight:900;color:var(--paper)}
+  .closing p{margin:0;color:var(--paper-muted);font-size:1.1rem}
+  .closing .btn-wa{margin-top:8px}
+  .closing .btn-wa,.hero-cta-row .btn-wa{background:var(--wa);color:#fff;border-color:#0c3d21;box-shadow:4px 4px 0 rgba(0,0,0,.5)}
+  .closing .btn-wa:hover,.hero-cta-row .btn-wa:hover{background:#1db255;box-shadow:6px 6px 0 rgba(0,0,0,.6)}
+  .closing .min{font-family:"Spline Sans Mono";font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+
+  /* ============== FOOTER ============== */
+  .footer{background:#050505;color:var(--paper);padding:56px 0 42px}
+  .foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .foot-logo{width:150px;border-radius:12px;margin-bottom:20px}
+  .foot-item{margin-bottom:16px}
+  .foot-item .k{font-family:"Spline Sans Mono";font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:4px}
+  .foot-item a,.foot-item span{color:var(--paper);text-decoration:none;font-size:1rem}
+  .foot-item a:hover{color:var(--gold)}
+  .foot-line{display:flex;align-items:flex-start;gap:9px}
+  .foot-ic{width:18px;height:18px;color:var(--gold);flex:none;margin-top:2px}
+  /* dourado legível nas dobras claras (bege) — âmbar mais fechado */
+  .section:not(.dark) .eyebrow{background:var(--ink);color:var(--gold);padding:7px 13px;border-radius:7px}
+  .section:not(.dark) .stitch{background:repeating-linear-gradient(90deg,#141210 0 10px,transparent 10px 18px);background-size:18px 2px;opacity:.85}
+  .section:not(.dark) .tech-title::after{background:repeating-linear-gradient(90deg,#141210 0 10px,transparent 10px 18px);background-size:18px 2px;opacity:.85}
+  .faq-item summary::after{color:#b8860b}
+  .foot-bottom{margin-top:34px;padding-top:20px;border-top:1px solid #1c1c1c;font-family:"Spline Sans Mono";font-size:.74rem;letter-spacing:.06em;color:var(--paper-muted)}
+
+  /* ============== FLOATING WHATSAPP ============== */
+  .wa-float{
+    position:fixed;right:18px;bottom:18px;z-index:90;
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--wa);color:#fff;text-decoration:none;
+    padding:13px 18px;border-radius:999px;
+    box-shadow:0 8px 22px rgba(0,0,0,.28);
+    font-family:"Archivo";font-weight:800;text-transform:uppercase;font-size:.86rem;letter-spacing:.02em;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .wa-float:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.34)}
+  .wa-float svg{width:22px;height:22px;flex:none}
+
+  /* ============== RESPONSIVE ============== */
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-right{min-height:auto;order:2}
+    .hero-photo{position:relative;width:100%;height:auto;object-fit:contain;object-position:center}
+    .seg-card{grid-template-columns:1fr}
+    .seg-card .ph{min-height:220px}
+    .tech-grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:1fr;gap:22px}
+    .step{flex-direction:row;align-items:center}
+    .step .tag{min-width:96px}
+    .step-txt{display:flex;flex-direction:column;gap:4px}
+    .social-top{grid-template-columns:1fr}
+    .quotes .quote{flex-basis:100%}
+    .why-grid{grid-template-columns:1fr 1fr}
+    .foot-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:480px){
+    .why-grid{grid-template-columns:1fr}
+    .tech-grid{grid-template-columns:1fr}
+    .wa-float span{display:none}
+    .wa-float{padding:14px}
+    .hero-tags{gap:10px}
+    .tag{min-width:92px;padding:16px 12px 13px}
+    .tag .num{font-size:2.1rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .track{transition:none}
+    .btn-wa,.wa-float,.arrow{transition:none}
+  }
+</style>
+
+<style>
+  .why-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .tech-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .tech-card.text{padding:24px 22px}
+  .tech-card.text .tech-name{margin-top:0}
+  .ind-note{max-width:640px;margin:28px auto 0;text-align:center;color:var(--paper-muted);font-size:.98rem;line-height:1.6}
+  .back-link{display:inline-block;margin-top:14px;color:var(--gold);text-decoration:none;font-family:"Spline Sans Mono";font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+  .back-link:hover{text-decoration:underline}
+  @media (max-width:860px){.why-grid.cols-3,.tech-grid.cols-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero on-dark">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <img class="hero-logo" src="/images/da-hora-camisetas-uniformes.webp" alt="Da Hora Camisetas & Uniformes" width="360" height="360" decoding="async">
+      <h1 class="eyebrow">Uniformes para empresas em São José dos Campos</h1>
+      <p class="hero-title">Sua equipe com a <em>cara</em> da sua empresa</p>
+      <p class="hero-sub">Camiseta, polo e uniforme industrial com a sua logo, a partir de 10 peças.</p>
+      <div class="stitch"></div>
+      <ul class="hero-stats">
+        <li><b>36</b> anos uniformizando empresas do Vale</li>
+      </ul>
+      <div class="hero-cta-row">
+        <a class="btn-wa" href="https://wa.me/5512988319131?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20uniformes%20para%20minha%20empresa.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar orçamento
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img class="hero-photo" src="/images/casal-vestindo-camisa-polo-branca-person.webp" alt="Casal vestindo camisa polo branca personalizável" width="1200" height="1257" decoding="async">
+    </div>
+  </div>
+</header>
+
+<section class="section" id="pecas">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Para a sua equipe</span>
+      <h2>O que a gente faz para empresas</h2>
+      <div class="stitch"></div>
+      <p class="sh-sub">Uniforme do dia a dia, do atendimento ao chão de fábrica, com a logo da sua empresa aplicada na técnica certa para o uso.</p>
+    </div>
+    <div class="tech-grid reveal">
+      <article class="tech-card text"><div class="tech-name">Camiseta</div><p class="tech-note">Para equipe de loja, obra, entrega e serviço. Tecido indicado pelo uso que a peça vai ter.</p></article>
+      <article class="tech-card text"><div class="tech-name">Camisa polo</div><p class="tech-note">Para atendimento, escritório e equipe comercial. Logo bordada ou estampada.</p></article>
+      <article class="tech-card text"><div class="tech-name">Uniforme industrial</div><p class="tech-note">Jaleco, calça de brim e camisa com faixa refletiva para quem trabalha na operação.</p></article>
+      <article class="tech-card text"><div class="tech-name">Reposição</div><p class="tech-note">Funcionário novo ou peça gasta: guardamos arte, tecido e medidas do seu pedido.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark on-dark" id="industria">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Indústria e operação</span>
+      <h2>Uniforme industrial</h2>
+      <div class="stitch"></div>
+    </div>
+    <div class="why-grid cols-3 reveal">
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Jaleco</h3><p>Para laboratório, produção, cozinha e área técnica, com a identificação da empresa.</p></article>
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Calça de brim</h3><p>Tecido resistente para o dia a dia pesado da operação.</p></article>
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Faixa refletiva</h3><p>Camisa com faixa refletiva para quem trabalha em pátio, obra ou via pública.</p></article>
+    </div>
+    <p class="ind-note reveal">Sua empresa segue alguma norma ou especificação para o uniforme? Mande junto no pedido de orçamento que a gente confirma com você o que dá pra atender antes de fechar.</p>
+  </div>
+</section>
+
+<section class="section" id="tecnicas">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Silk · Bordado · DTF · Sublimação</span>
+      <h2>Como aplicamos sua arte</h2>
+      <div class="stitch"></div>
+      <p class="sh-sub">Quatro técnicas na mesma casa. A escolha depende do uso da peça, da arte e da quantidade, e é isso que a gente avalia com você no orçamento.</p>
+    </div>
+    <div class="tech-grid reveal">
+      <article class="tech-card">
+        <img class="tech-img" src="/images/serigrafia-silk-em-producao.webp" alt="Serigrafia (silk) em produção" loading="lazy" width="900" height="600" decoding="async">
+        <div class="tech-name">Silk</div>
+        <p class="tech-note">Estampa firme e econômica quando a quantidade é grande e a arte tem poucas cores.</p>
+      </article>
+      <article class="tech-card">
+        <img class="tech-img" src="/images/bordado-em-maquina-industrial.webp" alt="Bordado em máquina industrial" loading="lazy" width="900" height="600" decoding="async">
+        <div class="tech-name">Bordado</div>
+        <p class="tech-note">O acabamento mais resistente. Valoriza a logo e aguenta uso e lavagem pesados.</p>
+      </article>
+      <article class="tech-card">
+        <img class="tech-img" src="/images/transferencia-dtf.webp" alt="Transferência DTF" loading="lazy" width="900" height="600" decoding="async">
+        <div class="tech-name">DTF</div>
+        <p class="tech-note">Segura cor e detalhe fino, mesmo em pouca quantidade. Bom pra arte cheia de nuance.</p>
+      </article>
+      <article class="tech-card">
+        <img class="tech-img" src="/images/sublimacao-em-prensa.webp" alt="Sublimação em prensa" loading="lazy" width="900" height="600" decoding="async">
+        <div class="tech-name">Sublimação</div>
+        <p class="tech-note">A estampa vira parte do tecido: não descasca nem racha. Permite peça inteira estampada.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark on-dark" id="processo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Passo a passo</span>
+      <h2>Do orçamento à entrega</h2>
+      <div class="stitch"></div>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="tag"><div class="num">1</div></div><div class="step-txt"><h3>Orçamento</h3><p>Você manda o pedido e a gente devolve o orçamento pra você avaliar.</p></div></div>
+      <div class="step"><div class="tag"><div class="num">2</div></div><div class="step-txt"><h3>Layout</h3><p>Depois do sinal, criamos o layout com a logo da sua empresa.</p></div></div>
+      <div class="step"><div class="tag"><div class="num">3</div></div><div class="step-txt"><h3>Tamanhos</h3><p>Tabela de medidas para acertar o tamanho de cada um.</p></div></div>
+      <div class="step"><div class="tag"><div class="num">4</div></div><div class="step-txt"><h3>Produção</h3><p>Cada peça passa por revisão antes de sair da fábrica.</p></div></div>
+      <div class="step"><div class="tag"><div class="num">5</div></div><div class="step-txt"><h3>Entrega</h3><p>No prazo combinado.</p></div></div>
+    </div>
+    <p class="steps-note reveal">Prazo de 15 a 30 dias · Arte e vetorização inclusa · Você aprova o layout antes de produzir</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="prova">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Empresas que confiam</span>
+      <h2>Quem já veste Da Hora</h2>
+      <div class="stitch"></div>
+    </div>
+    <div class="social-top reveal">
+      <div class="seal">
+        <div class="big">36</div>
+        <div class="cap">anos atendendo o Vale do Paraíba</div>
+      </div>
+      <div class="logos-grid">
+      <div class="logo-card"><img src="/images/aviation-service-interiores.webp" alt="Aviation Service Interiores" loading="lazy" width="480" height="169" decoding="async"></div>
+      <div class="logo-card logo-card--gray"><img src="/images/fagundes-ambientes-planejados.webp" alt="Fagundes Ambientes Planejados" loading="lazy" width="423" height="360" decoding="async"></div>
+      <div class="logo-card"><img src="/images/kronos-seg.webp" alt="Kronos-Seg" loading="lazy" width="480" height="334" decoding="async"></div>
+      <div class="logo-card"><img src="/images/cauana-hortifruti.webp" alt="Cauana Hortifrúti" loading="lazy" width="480" height="297" decoding="async"></div>
+      <div class="logo-card logo-card--dark"><img src="/images/imperial-plast.webp" alt="Imperial Plast" loading="lazy" width="448" height="360" decoding="async"></div>
+      <div class="logo-card"><img src="/images/proerd.webp" alt="Proerd" loading="lazy" width="480" height="255" decoding="async"></div>
+      <div class="logo-card"><img src="/images/cristagua.webp" alt="Cristágua" loading="lazy" width="480" height="170" decoding="async"></div>
+      <div class="logo-card"><img src="/images/mirai-telecom.webp" alt="Mirai Telecom" loading="lazy" width="344" height="360" decoding="async"></div>
+      <div class="logo-card logo-card--dark"><img src="/images/rancho-eldorado.webp" alt="Rancho Eldorado" loading="lazy" width="480" height="244" decoding="async"></div>
+      <div class="logo-card logo-card--black"><img src="/images/romu-ronda-ostensiva-municipal.webp" alt="ROMU - Ronda Ostensiva Municipal" loading="lazy" width="360" height="360" decoding="async"></div>
+      <div class="logo-card"><img src="/images/donna-pitaya-gourmet.webp" alt="Donna Pitaya Gourmet" loading="lazy" width="234" height="360" decoding="async"></div>
+      <div class="logo-card logo-card--map"><img src="/images/map-materiais-alta-performance.webp" alt="MAP - Materiais Alta Performance" loading="lazy" width="480" height="176" decoding="async"></div>
+    </div>
+    </div>
+    <div class="quotes reveal">
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Produto de ótima qualidade e atendimento excelente. Recomendo."</p><div class="who">Roberto Gonçalves</div></div>
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Atendimento excelente e material de muita qualidade. Recomendo!"</p><div class="who">Cleide Garcia</div></div>
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Excelente qualidade e acabamento impecável. Camisas confortáveis, bem confeccionadas, com um design incrível."</p><div class="who">Alex Borges</div></div>
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Ótimo atendimento e uniformes de qualidade. Parabéns pelo trabalho."</p><div class="who">Michelle Castro</div></div>
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Ótima qualidade e os preços são acessíveis. Atendimento excelente, muito simpático e prestativo."</p><div class="who">Lincoln Máximo</div></div>
+      <div class="quote"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>"Produto de excelente qualidade e ótimo atendimento"</p><div class="who">Marcos Mendes</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark on-dark" id="porque">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Por que a Da Hora</span>
+      <h2>O que sua empresa leva junto</h2>
+      <div class="stitch"></div>
+    </div>
+    <div class="why-grid reveal">
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Prazo fechado antes</h3><p>Produção de 15 a 30 dias. O prazo é combinado com você antes de confirmar o pedido.</p></article>
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Sua logo do jeito certo</h3><p>Vetorizamos ou recriamos a logo para sair limpa na peça. Você aprova o layout antes de produzir.</p></article>
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Tamanho de cada um</h3><p>Enviamos a tabela de medidas para levantar o tamanho de cada funcionário. Grade completa, incluindo tamanhos maiores.</p></article>
+      <article class="why-card"><div class="wc-ic">✓</div><h3>Garantia de 90 dias</h3><p>Revisão peça por peça antes de sair da fábrica e garantia contra defeito de fabricação.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Tire suas dúvidas</span>
+      <h2>Perguntas de quem compra para a empresa</h2>
+      <div class="stitch"></div>
+    </div>
+    <div class="faq reveal">
+      <details class="faq-item"><summary>Qual o pedido mínimo?</summary><p>A partir de 10 peças por pedido. Dá pra misturar tamanhos dentro do mesmo pedido.</p></details>
+      <details class="faq-item"><summary>Qual o prazo de produção?</summary><p>De 15 a 30 dias, contados da aprovação do layout. Pedidos grandes podem precisar de mais tempo, e nesse caso o prazo é combinado junto com o orçamento, antes de confirmar.</p></details>
+      <details class="faq-item"><summary>Tenho só a logo em imagem. Serve?</summary><p>Serve. Vetorizamos ou recriamos a sua logo pra ela sair limpa na peça, e você aprova o layout antes da produção começar.</p></details>
+      <details class="faq-item"><summary>Bordado ou estampa: o que fica melhor na polo?</summary><p>Bordado valoriza a logo e aguenta muita lavagem. Estampa sai mais em conta em quantidade maior ou quando a arte tem muitos detalhes. A gente indica pelo uso e explica o porquê.</p></details>
+      <details class="faq-item"><summary>Como acerto os tamanhos da equipe?</summary><p>Antes de produzir, enviamos a tabela de medidas pra você levantar o tamanho de cada funcionário. Temos grade completa, incluindo tamanhos maiores.</p></details>
+      <details class="faq-item"><summary>Entrou funcionário novo. Consigo fazer só mais algumas peças?</summary><p>Sim. Guardamos o histórico do seu pedido (arte, tecido, cores e medidas), então a reposição não recomeça do zero.</p></details>
+      <details class="faq-item"><summary>Vocês entregam na empresa?</summary><p>Somos de São José dos Campos e atendemos Jacareí, Caçapava e todo o Vale do Paraíba, com entrega combinada direto com você. Fora da região a gente também entrega, com frete acertado no orçamento.</p></details>
+      <details class="faq-item"><summary>E se a peça vier com defeito?</summary><p>Garantia de 90 dias contra defeito de fabricação. Deu problema nosso, a gente resolve.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section dark on-dark" id="pedir">
+  <div class="wrap">
+    <div class="closing reveal">
+      <h2>Conta pra gente o que a sua empresa precisa</h2>
+      <p>Quantas pessoas, quais peças e para quando. A gente devolve o orçamento sem compromisso.</p>
+      <a class="btn-wa big" href="https://wa.me/5512988319131?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20uniformes%20para%20minha%20empresa.">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Pedir orçamento para minha empresa
+      </a>
+      <span class="min">A partir de 10 peças · Arte e vetorização inclusa</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="foot-logo" src="/images/da-hora-camisetas-uniformes.webp" alt="Da Hora Camisetas & Uniformes" width="360" height="360" loading="lazy" decoding="async">
+        <p style="color:var(--paper-muted);max-width:34ch;font-size:.95rem">Uniformes personalizados desde 1990. Silk, bordado, DTF e sublimação.</p>
+      </div>
+      <div>
+        <div class="foot-item"><span class="k">WhatsApp</span><div class="foot-line"><svg class="foot-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><a href="https://wa.me/5512988319131?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20uniformes%20para%20minha%20empresa.">(12) 98831-9131</a></div></div>
+        <div class="foot-item"><span class="k">E-mail</span><div class="foot-line"><svg class="foot-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 11 4 6.01V6h16zM4 18V8.24l7.47 4.67a1 1 0 0 0 1.06 0L20 8.24V18H4z"/></svg><a href="mailto:dahorauniformes@gmail.com">dahorauniformes@gmail.com</a></div></div>
+        <div class="foot-item"><span class="k">Endereço</span><div class="foot-line"><svg class="foot-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Da%20Hora%20Camisetas%20%26%20Uniformes%2C%20Av.%20Eliane%20Maria%20Barbiere%20Soares%2C%20313%2C%20Jd%20Morumbi%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP" target="_blank" rel="noopener">Av. Eliane Maria Barbiere Soares, 313 · Jd Morumbi, São José dos Campos - SP</a></div></div>
+        <div class="foot-item"><span class="k">Instagram</span><div class="foot-line"><svg class="foot-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg><a href="https://instagram.com/dahoracamisetas" target="_blank" rel="noopener">@dahoracamisetas</a></div></div>
+      </div>
+    </div>
+    <div class="foot-bottom">© Da Hora Camisetas & Uniformes · São José dos Campos - SP<br><a class="back-link" href="/">← Uniformes para todos os segmentos</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5512988319131?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20uniformes%20para%20minha%20empresa." aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+(function(){
+  /* ---- carousel ---- */
+  var track=document.getElementById('track');
+  var slides=track?track.children.length:0;
+  var idx=0;
+  var prev=document.getElementById('prev');
+  var next=document.getElementById('next');
+  var dotsWrap=document.getElementById('dots');
+
+  for(var i=0;i<slides;i++){
+    var d=document.createElement('button');
+    d.className='dot';d.setAttribute('role','tab');
+    d.setAttribute('aria-label','Ir para o card '+(i+1));
+    (function(n){d.addEventListener('click',function(){go(n)})})(i);
+    dotsWrap.appendChild(d);
+  }
+  function render(){
+    track.style.transform='translateX(-'+(idx*100)+'%)';
+    var dots=dotsWrap.children;
+    for(var i=0;i<dots.length;i++){dots[i].setAttribute('aria-selected', i===idx?'true':'false')}
+    prev.disabled=(idx===0);
+    next.disabled=(idx===slides-1);
+  }
+  function go(n){idx=Math.max(0,Math.min(slides-1,n));render()}
+  if(prev&&next){
+    prev.addEventListener('click',function(){go(idx-1)});
+    next.addEventListener('click',function(){go(idx+1)});
+    render();
+  }
+  /* swipe */
+  var x0=null;
+  var car=document.querySelector('.carousel');
+  if(car){
+    car.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+    car.addEventListener('touchend',function(e){
+      if(x0===null)return;
+      var dx=e.changedTouches[0].clientX-x0;
+      if(Math.abs(dx)>40){ go(dx<0?idx+1:idx-1) }
+      x0=null;
+    },{passive:true});
+  }
+
+  /* ---- scroll reveal (enhancement only; content is visible without JS) ---- */
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  function revealAll(){els.forEach(function(el){el.classList.add('in')})}
+  if(reduce || !('IntersectionObserver' in window)){
+    /* no anim class = elements stay fully visible */
+  }else{
+    document.documentElement.classList.add('anim');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)} })
+    },{threshold:0.08, rootMargin:'0px 0px -4% 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(revealAll, 2500); /* safety net: never leave anything hidden */
+  }
+})();
+</script>
+</body>
+</html>
